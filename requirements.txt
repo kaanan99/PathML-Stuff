@@ -1,0 +1,9 @@
+tensorboard
+jupyterlab
+ipywidgets
+torchvision
+pytorch_lightning
+lightning
+neptune
+neptune-tensorboard
+tqdm
