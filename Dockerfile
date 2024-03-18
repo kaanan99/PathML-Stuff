@@ -9,9 +9,9 @@ RUN git clone https://github.com/kaanan99/PathML-Stuff.git
 WORKDIR ./PathML-Stuff/src
 
 # Create Directories for storing data
-RUN mkdir ./src/tensor_board_logs
-RUN mkdir ./src/confusion_matrices
-RUN mkdir ./src/final_checkpoints
+RUN mkdir ./tensor_board_logs
+RUN mkdir ./confusion_matrices
+RUN mkdir ./final_checkpoints
 
 # Install Requirements
 RUN pip install -r requirements.txt
