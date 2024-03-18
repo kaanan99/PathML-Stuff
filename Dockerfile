@@ -6,7 +6,7 @@ RUN apt-get update
 RUN git clone https://github.com/kaanan99/PathML-Stuff.git
 
 # Set Repo to working directory
-WORKDIR ./PathML-Stuff 
+WORKDIR ./PathML-Stuff/src
 
 # Create Directories for storing data
 RUN mkdir ./src/tensor_board_logs
