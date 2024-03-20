@@ -2,11 +2,11 @@ FROM pytorchlightning/pytorch_lightning:base-cuda-py3.11-torch2.2-cuda12.1.0
 
 RUN apt-get update
 
-# Clone the Repo
-RUN git clone https://github.com/kaanan99/PathML-Stuff.git
+
+COPY src /workspace/src
 
 # Set Repo to working directory
-WORKDIR ./PathML-Stuff/src
+WORKDIR /workspace/src
 
 # Create Directories for storing data
 RUN mkdir ./tensor_board_logs
