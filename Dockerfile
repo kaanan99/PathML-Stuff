@@ -2,8 +2,8 @@ FROM pytorchlightning/pytorch_lightning:base-cuda-py3.11-torch2.2-cuda12.1.0
 
 RUN apt-get update
 
-
 COPY src /workspace/src
+COPY requirements.txt /workspace/src
 
 # Set Repo to working directory
 WORKDIR /workspace/src
