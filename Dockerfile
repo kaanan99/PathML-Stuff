@@ -24,4 +24,4 @@ EXPOSE 8888
 EXPOSE 6006
 
 # Run Jupyter and Tensorboard
-CMD jupyter lab --allow-root --ip="*"  --NotebookApp.token='' --NotebookApp.password='' & tensorboard --logdir /kaanan_workspace/tensor_board_logs --bind_all
+CMD jupyter lab --allow-root --ip="*"  --NotebookApp.token='' --NotebookApp.password='' & tensorboard --logdir /workspace/src/tensor_board_logs --bind_all
